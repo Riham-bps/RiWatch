@@ -1,0 +1,12 @@
+// Variables
+
+$primary-color: #dc2323;
+$secondary-color: #ffffff;
+$success-color: #000000;
+
+$primary: $primary-color;
+$secondary: $secondary-color;
+$success: #000000;
+
+// Command import bootstrap
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
