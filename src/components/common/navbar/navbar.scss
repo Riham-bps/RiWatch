@@ -1,0 +1,14 @@
+@import "../../../assets/styles/custom-variables.scss";
+
+.nav-link:hover {
+  color: $success !important;
+  font-weight: 600;
+  font-size: 1.1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.nav-item.active .nav-link {
+  font-weight: bold;
+  color: $success !important;
+  background-color: rgba(0, 0, 0, 0.1);
+}
