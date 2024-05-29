@@ -1,20 +1,12 @@
 @import "../../assets/styles/custom-variables.scss";
 
-// .page-container {
-//   background: url("../../assets/images/header-background.jpeg");
-//   height: 400px;
-//   opacity: 0.8;
-//   backdrop-filter: blur(5px);
-// }
-// .header-description {
-//   font-family: "Poppins", sans-serif;
-//   font-size: 1.5rem;
-//   font-weight: bold;
-// }
-
 .page-container {
   position: relative;
   height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .page-container::before {
@@ -28,19 +20,24 @@
   background-size: cover;
   background-position: center;
   opacity: 0.8;
-  filter: blur(5px); /* Appliquer un flou à l'arrière-plan */
+  filter: blur(5px);
   z-index: -1;
 }
 
-.header-description {
-  position: relative; /* Assurez-vous que le texte est au-dessus de l'arrière-plan flou */
-  font-family: "Poppins", sans-serif;
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: white;
-  padding: 50px;
+.container-header {
+  position: relative;
+  z-index: 1; /* Assurez-vous que le contenu est au-dessus de l'image floue */
 }
 
-.header-button {
-  padding: 0 200px;
+.header-description {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  color: white;
+  padding: 20px; /* Ajusté pour un meilleur espacement */
+}
+
+.btn-header {
+  width: 60vw;
+  margin-top: 20px; /* Pour ajouter de l'espace entre le texte et le bouton */
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "./footer.scss";
 export default function FooterComponent() {
   return (
     <footer className="bg-dark text-white mt-5 p-4">
@@ -11,8 +12,7 @@ export default function FooterComponent() {
             <p>
               Rejoignez-nous chez RiWatch pour explorer un monde de cinéma sans
               fin. Découvrez les dernières sorties, les classiques intemporels
-              et bien plus encore. Avec RiWatch, chaque film devient une
-              aventure. Vivez le cinéma comme jamais auparavant !
+              et bien plus encore.
             </p>
           </Col>
           <Col md="4" className="text-center">
@@ -23,21 +23,21 @@ export default function FooterComponent() {
             </ul>
           </Col>
           <Col md="4" className="text-center text-md-right">
-            <h5>Follow Us</h5>
+            <h5>Suivez-Nous</h5>
             <ul className="list-unstyled">
               <li>
                 <a href="#" className="text-white">
-                  Facebook
+                  <i class="bi bi-facebook"></i>
                 </a>
               </li>
               <li>
                 <a href="#" className="text-white">
-                  Twitter
+                  <i class="bi bi-twitter"></i>
                 </a>
               </li>
               <li>
                 <a href="#" className="text-white">
-                  Instagram
+                  <i class="bi bi-instagram"></i>
                 </a>
               </li>
             </ul>

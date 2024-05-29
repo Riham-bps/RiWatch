@@ -10,16 +10,19 @@ import Col from "react-bootstrap/Col";
 export default function HeaderComponent() {
   return (
     <div className="page-container">
-      <Container className="h-100 ">
-        <Row className="d-flex justify-content-center align-items-center ">
-          <div className="header-description text-center text-secondary">
+      <Container className="container-header d-flex flex-column justify-content-center align-items-center text-center">
+        <Row className="d-flex justify-content-center align-items-center">
+          <div className="header-description text-secondary">
             RiWatch : Votre portail vers des millions de films, séries et
             célébrités. Plongez dans l'univers du cinéma !
           </div>
         </Row>
-
-        <Row className="header-button d-flex justify-content-center align-items-center ">
-          <Button>Découvrir</Button>
+        <Row className="justify-content-center">
+          <Col className="text-center">
+            <Button variant="primary" className="btn-header">
+              Découvrir
+            </Button>
+          </Col>
         </Row>
       </Container>
     </div>
