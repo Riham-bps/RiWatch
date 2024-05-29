@@ -1,4 +1,5 @@
 import NavbarComponent from "./components/common/navbar/NavbarComponent";
+
 import Home from "./pages/Home";
 import Movies from "./pages/Movies";
 import Favorite from "./pages/Favorite";
@@ -9,7 +10,8 @@ import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <>
-      <NavbarComponent></NavbarComponent>:
+      <NavbarComponent></NavbarComponent>
+
       <div className="container">
         <Routes>
           <Route path="/" element={<Home />}></Route>

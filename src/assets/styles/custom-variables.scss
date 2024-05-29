@@ -20,13 +20,24 @@ $success: #000000;
 
 h1 {
   color: $secondary !important;
+  font-family: "Poppins", sans-serif;
   //   margin: $base-margin;
 }
 
 h2 {
   color: $secondary !important;
+  font-family: "Poppins", sans-serif;
+  padding-top: 10px;
   //   margin: $base-margin;
 }
-
+h3 {
+  color: $secondary !important;
+  font-family: "Poppins", sans-serif;
+  padding-top: 10px;
+  //   margin: $base-margin;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
 // Command import bootstrap
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
