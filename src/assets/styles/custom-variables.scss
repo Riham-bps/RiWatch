@@ -23,5 +23,10 @@ h1 {
   //   margin: $base-margin;
 }
 
+h2 {
+  color: $secondary !important;
+  //   margin: $base-margin;
+}
+
 // Command import bootstrap
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
