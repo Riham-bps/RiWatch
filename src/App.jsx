@@ -1,5 +1,5 @@
 import NavbarComponent from "./components/common/navbar/NavbarComponent";
-import BasicExample from "./components/draft-components/DraftNavbar";
+import BasicExample from "./components/Z-Draft-components/DraftNavbar";
 import Home from "./pages/Home";
 import Movies from "./pages/Movies";
 import Favorite from "./pages/Favorite";

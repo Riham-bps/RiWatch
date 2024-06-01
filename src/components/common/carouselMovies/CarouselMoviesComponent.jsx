@@ -1,5 +1,4 @@
 import CardMovieComponent from "../cardMovie/CardMovieComponent";
-
 import CardGroup from "react-bootstrap/CardGroup";
 
 export default function CarouselMoviesComponent() {
