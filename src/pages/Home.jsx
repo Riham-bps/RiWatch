@@ -5,11 +5,11 @@ import FooterComponent from "../components/common/footer/FooterComponent";
 export default function Home() {
   return (
     <>
-      <HeaderComponent></HeaderComponent>
+      <HeaderComponent />
       <h3>Nos dernières sorties</h3>
-      <CarouselMoviesComponent></CarouselMoviesComponent>
+      <CarouselMoviesComponent />
       <h3>De votre liste des favoris </h3>
-      <CarouselFavoriteComponent></CarouselFavoriteComponent>
+      <CarouselFavoriteComponent />
       <h3>Les célébrités les plus populaires </h3>
     </>
   );
