@@ -1,7 +1,9 @@
+import FormLoginComponent from "../components/formLogin/FormLogin";
 export default function FormLogin() {
   return (
     <>
-      <h1>LOGIN</h1>
+      <h3 className="d-flex justify-content-center">Se connecter</h3>
+      <FormLoginComponent />
     </>
   );
 }

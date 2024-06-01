@@ -1,5 +1,6 @@
 import { useState } from "react";
 import React from "react";
+import { Row, Col } from "react-bootstrap";
 import CarouselMoviesComponent from "../components/common/carouselMovies/CarouselMoviesComponent";
 import SortMovies from "../components/Sortmovies";
 export default function Movies() {
@@ -27,10 +28,14 @@ export default function Movies() {
   ]);
   return (
     <>
-      <h1>MOVIES</h1>
-      <div className="d-flex justify-content-around">
-        <SortMovies />
-        <CarouselMoviesComponent />
+      <h3>Movies</h3>
+      <div>
+        <Row className="d-flex justify-content-center">
+          <SortMovies />
+        </Row>
+        <Row>
+          <CarouselMoviesComponent />
+        </Row>
       </div>
     </>
   );
