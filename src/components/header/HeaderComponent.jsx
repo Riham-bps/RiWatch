@@ -12,10 +12,10 @@ export default function HeaderComponent() {
     <div className="page-container">
       <Container className="container-header d-flex flex-column justify-content-center align-items-center text-center">
         <Row className="d-flex justify-content-center align-items-center">
-          <div className="header-description text-secondary">
+          <h3>
             RiWatch : Votre portail vers des millions de films, séries et
             célébrités. Plongez dans l'univers du cinéma !
-          </div>
+          </h3>
         </Row>
         <Row className="justify-content-center">
           <Col className="text-center">

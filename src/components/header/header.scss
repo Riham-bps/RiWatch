@@ -26,7 +26,7 @@
 
 .container-header {
   position: relative;
-  z-index: 1; /* Assurez-vous que le contenu est au-dessus de l'image floue */
+  z-index: 1;
 }
 
 .header-description {
@@ -34,10 +34,9 @@
   font-size: 1.25rem;
   font-weight: bolder;
   color: white;
-  padding: 20px; /* Ajusté pour un meilleur espacement */
 }
 
 .btn-header {
   width: 60vw;
-  margin-top: 20px; /* Pour ajouter de l'espace entre le texte et le bouton */
+  margin-top: 20px;
 }

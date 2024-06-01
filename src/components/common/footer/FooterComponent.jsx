@@ -4,10 +4,10 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import "./footer.scss";
 export default function FooterComponent() {
   return (
-    <footer className="bg-dark text-white mt-5 p-4">
+    <footer className="bg-dark text-white mt-5 p-4 " fixed="bottom">
       <Container>
         <Row>
-          <Col md="4" className="text-center text-md-left">
+          <Col md="4" className="text-center text-md-left ">
             <h5>A Propos de Nous</h5>
             <p>
               Rejoignez-nous chez RiWatch pour explorer un monde de cinéma sans
