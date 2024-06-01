@@ -12,6 +12,18 @@ export default function CarouselFavoriteComponent() {
           <div className="mx-2 my-3">
             <CardMovieComponent />
           </div>
+          <div className="mx-2 my-3">
+            <CardMovieComponent />
+          </div>
+          <div className="mx-2 my-3">
+            <CardMovieComponent />
+          </div>
+          <div className="mx-2 my-3">
+            <CardMovieComponent />
+          </div>
+          <div className="mx-2 my-3">
+            <CardMovieComponent />
+          </div>
         </CardGroup>
       </div>
     </>
