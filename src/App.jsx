@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Movies from "./pages/Movies";
 import Favorite from "./pages/Favorite";
 import FormLogin from "./pages/FormLogin";
+import FooterComponent from "./components/common/footer/FooterComponent";
 import FormSignUp from "./pages/FormSignUp";
 import { Route, Routes } from "react-router-dom";
 
@@ -23,6 +24,7 @@ function App() {
           </Routes>
         </div>
       </div>
+      <FooterComponent></FooterComponent>
     </>
   );
 }
