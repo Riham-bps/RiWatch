@@ -11,8 +11,6 @@ export default function Home() {
       <h3>De votre liste des favoris </h3>
       <CarouselFavoriteComponent></CarouselFavoriteComponent>
       <h3>Les célébrités les plus populaires </h3>
-
-      <FooterComponent></FooterComponent>
     </>
   );
 }

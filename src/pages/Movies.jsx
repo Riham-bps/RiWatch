@@ -29,7 +29,6 @@ export default function Movies() {
     <>
       <h1>MOVIES</h1>
       <div className="d-flex justify-content-around">
-        {" "}
         <SortMovies />
         <CarouselMoviesComponent />
       </div>

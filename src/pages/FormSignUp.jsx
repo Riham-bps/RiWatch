@@ -5,7 +5,6 @@ export default function FormSignUp() {
     <>
       <h3 className="d-flex justify-content-center">Créer votre compte</h3>
       <FormSignUpComponent></FormSignUpComponent>
-      <FooterComponent></FooterComponent>
     </>
   );
 }
