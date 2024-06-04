@@ -2,34 +2,35 @@ import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "./singleMovieStyle.scss";
 
-export default function SingleMovieComponent() {
+import ReactPlayer from "react-player/youtube";
+
+export default function SingleMovieComponent(props) {
   return (
     <Container>
+      <h3>{props.movie.title}</h3>
       <Row className="mb-3">
         <Col md={4}>
           <Row>
-            <Col>2023</Col>
-            <Col>2h30min</Col>
-            <Col>Tous publics</Col>
+            <Col>{props.movie.year}</Col>
+            <Col>{props.movie.duration}</Col>
+            <Col>{props.movie.age}</Col>
           </Row>
         </Col>
       </Row>
       <Row className="mb-3">
         <Col className="col-3">
           <img
-            src="src/assets/images/movie-avatar-card.webp"
+            src={props.movie.poster}
             className="image-description"
-            alt="Movie Avatar"
+            alt="movie"
+            style={{ height: "100%", width: "auto" }}
           />
         </Col>
         <Col>
-          <video width="500" autoPlay controls>
-            <source
-              src="src/assets/videos/Avatar_ The Way of Water _ Official Trailer.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
+          <ReactPlayer
+            url={props.movie.video}
+            style={{ height: "100%", width: "auto" }}
+          />
         </Col>
       </Row>
       <Row className="mb-3">
@@ -40,18 +41,17 @@ export default function SingleMovieComponent() {
         </Col>
       </Row>
       <Row className="text-secondary description-text mb-3">
-        Un marine paraplégique envoyé sur la lune Pandora pour une mission
-        unique est tiraillé entre suivre ses ordres et protéger le monde qu'il
-        considère le sien.
+        {props.movie.summary}
       </Row>
       <Row className="mb-3">
         <Col md={4}>
           <Row>
             <Col>
-              <Button variant="secondary">Action</Button>
-            </Col>
-            <Col>
-              <Button variant="secondary">Action</Button>
+              {props.movie.type.map((element, index) => (
+                <Button variant="secondary" key={index}>
+                  {element}
+                </Button>
+              ))}
             </Col>
           </Row>
         </Col>
