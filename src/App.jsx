@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import NavbarComponent from "./components/common/navbar/NavbarComponent";
+import BasicExample from "./components/Z-Draft-components/DraftNavbar";
+import Home from "./pages/Home";
+import Movies from "./pages/Movies";
+import Favorite from "./pages/Favorite";
+import FormLogin from "./pages/FormLogin";
+import FooterComponent from "./components/common/footer/FooterComponent";
+import FormSignUp from "./pages/FormSignUp";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <NavbarComponent></NavbarComponent>
+      <div style={{ paddingTop: "90px" }} className="content">
+        <div className="container">
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/home" element={<Home></Home>}></Route>
+            <Route path="/movies" element={<Movies></Movies>}></Route>
+            <Route path="/favorite" element={<Favorite></Favorite>}></Route>
+            <Route path="/login" element={<FormLogin></FormLogin>}></Route>
+            <Route path="/signup" element={<FormSignUp></FormSignUp>}></Route>
+          </Routes>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <FooterComponent></FooterComponent>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,0 +1,60 @@
+// Import google fonts
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+// Theme colors
+
+$primary-color: #dc2323;
+$secondary-color: #ffffff;
+$success-color: #000000;
+
+$primary: $primary-color;
+$secondary: $secondary-color;
+$success: #000000;
+
+//spacing
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+// Titles
+
+h1 {
+  color: $secondary !important;
+  font-family: "Poppins", sans-serif;
+  padding-top: 10px;
+}
+
+h2 {
+  color: $secondary !important;
+  font-family: "Poppins", sans-serif;
+  padding-top: 10px;
+  //   margin: $base-margin;
+}
+h3 {
+  color: $secondary !important;
+  font-family: "Poppins", sans-serif;
+  padding-top: 10px;
+  //   margin: $base-margin;
+}
+h5 {
+  color: $secondary !important;
+  font-family: "Poppins", sans-serif;
+  padding-top: 10px;
+  //   margin: $base-margin;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.custom-buttonon {
+  font-family: "Poppins", sans-serif;
+}
+label {
+  color: $secondary !important;
+  font-family: "Poppins", sans-serif !important;
+}
+button {
+  font-family: "Poppins", sans-serif !important;
+}
+// Command import bootstrap
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";

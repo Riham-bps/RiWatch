@@ -1,0 +1,22 @@
+@import "../../../assets/styles/App.scss";
+
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.nav-item.active .nav-link {
+  font-weight: bold;
+  color: $success !important;
+}
+.btn-login {
+  padding: 0;
+  margin: 10px;
+  font-weight: 500;
+}
+.title-page {
+  color: $secondary !important;
+  font-size: x-large;
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: 60px;
+}
