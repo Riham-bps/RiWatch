@@ -1,22 +1,24 @@
 export const allMovies = [
   {
-    Title: "Star Wars",
-    Year: "1977",
-    Type: "science-fiction",
-    Poster: "src/assets/images/movie-avatar-card.webp",
+    id: "01",
+    title: "StarW",
+    year: "1977",
+    type: "science-fiction",
+    poster: "src/assets/images/movie-avatar-card.webp",
   },
   {
-    Title: "Titanic",
-    Year: "1997",
-    Type: "romantic",
-    Poster:
+    id: "02",
+    title: "Titanic",
+    year: "1997",
+    type: "romantic",
+    poster:
       "https://upload.wikimedia.org/wikipedia/en/1/18/Titanic_%281997_film%29_poster.png",
   },
   {
-    Title: "Dune",
-    Year: "2000",
-    Type: "action",
-    Poster:
-      "https://www.imdb.com/title/tt15239678/mediaviewer/rm1391346433/?ref_=tt_ov_i",
+    id: "03",
+    title: "Dune",
+    year: "2000",
+    type: "action",
+    poster: "https://fr.web.img4.acsta.net/pictures/24/01/26/10/18/5392835.jpg",
   },
 ];

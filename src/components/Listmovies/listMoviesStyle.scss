@@ -1,0 +1,12 @@
+.movie-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .movie-card {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+}
