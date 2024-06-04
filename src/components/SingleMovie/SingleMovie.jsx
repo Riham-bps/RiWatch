@@ -1,11 +1,12 @@
-import { Row, Col, Button, Container } from "react-bootstrap";
+import React from "react";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import "./singleMovieStyle.scss";
 
 export default function SingleMovieComponent() {
   return (
     <Container>
       <Row className="mb-3">
-        <Col md="4">
+        <Col md={4}>
           <Row>
             <Col>2023</Col>
             <Col>2h30min</Col>
@@ -33,7 +34,9 @@ export default function SingleMovieComponent() {
       </Row>
       <Row className="mb-3">
         <Col>
-          <Button>Ajouter à mes favoris</Button>
+          <Button variant="primary" className="add-favorite-btn">
+            Ajouter à mes favoris
+          </Button>
         </Col>
       </Row>
       <Row className="text-secondary description-text mb-3">
@@ -42,13 +45,13 @@ export default function SingleMovieComponent() {
         considère le sien.
       </Row>
       <Row className="mb-3">
-        <Col md="4">
+        <Col md={4}>
           <Row>
             <Col>
-              <Button>Action</Button>
+              <Button variant="secondary">Action</Button>
             </Col>
             <Col>
-              <Button>Action</Button>
+              <Button variant="secondary">Action</Button>
             </Col>
           </Row>
         </Col>

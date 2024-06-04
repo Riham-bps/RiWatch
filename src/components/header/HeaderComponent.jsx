@@ -2,7 +2,7 @@ import "./header.scss";
 import Navbar from "react-bootstrap/Navbar";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-
+import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -19,9 +19,9 @@ export default function HeaderComponent() {
         </Row>
         <Row className="justify-content-center">
           <Col className="text-center">
-            <Button variant="primary" className="btn-header">
+            <Link to="/movies" className="btn btn-primary">
               Découvrir
-            </Button>
+            </Link>
           </Col>
         </Row>
       </Container>
