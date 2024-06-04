@@ -4,10 +4,7 @@ import CarouselMoviesComponent from "../components/common/carouselMovies/Carouse
 export default function Favorite() {
   return (
     <>
-      <h3>Title movie</h3>
-      <SingleMovieComponent />
-      <h3>Recommandations</h3>
-      <CarouselMoviesComponent />
+      <h3>FAVORITE</h3>
     </>
   );
 }

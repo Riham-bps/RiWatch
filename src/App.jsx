@@ -6,6 +6,8 @@ import FormLogin from "./pages/FormLogin";
 import FooterComponent from "./components/common/footer/FooterComponent";
 import FormSignUp from "./pages/FormSignUp";
 import NotFound from "./pages/NotFound";
+import DetailsMovie from "./pages/DetailsMovie";
+import { useParams } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 import "./appStyle.scss";
 
@@ -24,6 +26,8 @@ function App() {
             <Route path="/signup" element={<FormSignUp />} />
             <Route path="*" element={<NotFound />} />
             {/* path non existant = page non trouvee */}
+
+            <Route path="/details/:id" element={<DetailsMovie />} />
           </Routes>
         </div>
       </div>
