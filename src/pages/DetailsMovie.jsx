@@ -9,14 +9,12 @@ export default function DetailsMovie() {
 
   if (!movie) {
     return <div>Film non trouvé</div>;
-  } else {
-    console.log(movie);
-    return (
-      <>
-        <SingleMovieComponent movie={movie} />
-        <h3>Recommandations</h3>
-        <CarouselMoviesComponent />
-      </>
-    );
   }
+  return (
+    <>
+      <SingleMovieComponent movie={movie} />
+      <h3>Recommandations</h3>
+      <CarouselMoviesComponent />
+    </>
+  );
 }

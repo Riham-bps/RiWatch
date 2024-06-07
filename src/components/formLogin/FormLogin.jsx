@@ -45,62 +45,66 @@ export default function FormLoginComponent() {
 
   return (
     <>
-      <div className="d-flex justify-content-center">
-        <form
-          onSubmit={handleSubmit(onSubmit)}
-          className="col-12 col-md-6 mx-auto"
-        >
-          {isSubmitSuccessful && (
-            <div className="alert alert-info">Merci pour votre inscription</div>
-          )}
-
-          <div className="mb-3">
-            <label htmlFor="email" className="form-label">
-              E-mail
-            </label>
-            <input
-              type="email"
-              className={`form-control ${errors.email ? "is-invalid" : ""}`}
-              id="email"
-              aria-describedby="emailHelp"
-              name="email"
-              {...register("email")}
-            />
-            {errors.email && (
-              <span className="text-primary">
-                <i className="bi bi-info-circle-fill"></i>{" "}
-                {errors.email.message}
-              </span>
+      <div className="d-flex align-items-center justify-content-center">
+        <div className="col-md-5 mx-auto container-form p-5 mt-5">
+          <h3 className="mb-5">Se connecter</h3>
+          <form onSubmit={handleSubmit(onSubmit)}>
+            {isSubmitSuccessful && (
+              <div className="alert alert-info">
+                Merci pour votre inscription
+              </div>
             )}
-          </div>
 
-          <div className="mb-3">
-            <label htmlFor="password" className="form-label">
-              Mot de passe
-            </label>
-            <input
-              type="password"
-              className={`form-control ${errors.password ? "is-invalid" : ""}`}
-              id="password"
-              name="password"
-              {...register("password")}
-            />
-            {errors.password && (
-              <span className="text-primary">
-                <i className="bi bi-info-circle-fill"></i>{" "}
-                {errors.password.message}
-              </span>
-            )}
-          </div>
+            <div className="mb-3">
+              <label htmlFor="email" className="form-label">
+                E-mail
+              </label>
+              <input
+                type="email"
+                className={`form-control ${errors.email ? "is-invalid" : ""}`}
+                id="email"
+                aria-describedby="emailHelp"
+                name="email"
+                {...register("email")}
+              />
+              {errors.email && (
+                <span className="text-primary">
+                  <i className="bi bi-info-circle-fill"></i>{" "}
+                  {errors.email.message}
+                </span>
+              )}
+            </div>
 
-          <button
-            type="submit"
-            className="btn btn-primary my-4 w-100 "
-            disabled={isSubmitting}
-          >
-            Se connecter
-          </button>
-        </form>
+            <div className="mb-3">
+              <label htmlFor="password" className="form-label">
+                Mot de passe
+              </label>
+              <input
+                type="password"
+                className={`form-control ${
+                  errors.password ? "is-invalid" : ""
+                }`}
+                id="password"
+                name="password"
+                {...register("password")}
+              />
+              {errors.password && (
+                <span className="text-primary">
+                  <i className="bi bi-info-circle-fill"></i>{" "}
+                  {errors.password.message}
+                </span>
+              )}
+            </div>
+
+            <button
+              type="submit"
+              className="btn btn-primary mt-5 w-100 "
+              disabled={isSubmitting}
+            >
+              Se connecter
+            </button>
+          </form>
+        </div>
       </div>
     </>
   );

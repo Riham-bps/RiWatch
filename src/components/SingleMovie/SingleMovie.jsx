@@ -3,7 +3,6 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import "./singleMovieStyle.scss";
 
 import ReactPlayer from "react-player/youtube";
-
 export default function SingleMovieComponent(props) {
   return (
     <Container>
