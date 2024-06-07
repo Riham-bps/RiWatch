@@ -7,7 +7,6 @@ import FooterComponent from "./components/common/footer/FooterComponent";
 import FormSignUp from "./pages/FormSignUp";
 import NotFound from "./pages/NotFound";
 import DetailsMovie from "./pages/DetailsMovie";
-import { useParams } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 import "./appStyle.scss";
 
