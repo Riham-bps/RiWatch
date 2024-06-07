@@ -27,17 +27,17 @@ export default function FooterComponent() {
             <ul className="list-unstyled">
               <li>
                 <a href="#" className="text-white">
-                  <i class="bi bi-facebook"></i>
+                  <i className="bi bi-facebook"></i>
                 </a>
               </li>
               <li>
                 <a href="#" className="text-white">
-                  <i class="bi bi-twitter"></i>
+                  <i className="bi bi-twitter"></i>
                 </a>
               </li>
               <li>
                 <a href="#" className="text-white">
-                  <i class="bi bi-instagram"></i>
+                  <i className="bi bi-instagram"></i>
                 </a>
               </li>
             </ul>

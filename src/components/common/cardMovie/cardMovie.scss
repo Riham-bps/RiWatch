@@ -1,0 +1,59 @@
+@import "../../../assets/styles/App.scss";
+
+.card {
+  border: none !important;
+  margin: 1rem 0.75rem;
+  max-width: 200px !important;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  // Ensure cards have a consistent height
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-body {
+  padding: 0.5rem 0.5rem !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.card-title.h5 {
+  color: $success !important;
+}
+
+.card-title {
+  color: $success !important;
+  font-size: 1.25rem;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 300px; // Fixed height for the images
+  object-fit: cover;
+}
+
+.like-button {
+  background: none;
+  border: none !important;
+  border-radius: 50%;
+  color: black;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  font-size: 1rem !important;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+    margin: 1rem auto;
+  }
+}
